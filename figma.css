@@ -23,6 +23,8 @@ header{
 
 header.sticky{
     background: #fff;
+  
+  
     
 }
 
@@ -50,6 +52,7 @@ nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
+   
 }
 
 nav a{
@@ -309,7 +312,7 @@ section{
 
 
 
-/*skills*/
+/*skills section*/
 
 #skills{
     display: flex;
@@ -455,7 +458,7 @@ section{
 }
 
 
-/*testimonials*/
+/*testimonials section*/
 
 #testimonial{
     display: flex;
@@ -491,7 +494,7 @@ section{
 
 
 
-/*map*/
+/*map section */
 
 
 #map{
@@ -558,9 +561,11 @@ section{
     text-transform: capitalize;
 }
 
+/*media queryies*/
+  
+/*mobile phones*/
 
-
-@media only screen and (min-width: 320px) and (max-width: 480px) {
+@media only screen and (min-width: 320px) and (max-width: 768px) {
   body{
     overflow-x: hidden;
   }
@@ -605,6 +610,8 @@ section{
 
     .intro{
         width: 100%;
+        text-align: center;
+        padding: 5px;
        
         
     }
@@ -614,7 +621,7 @@ section{
     }
 
     .intro h6{
-        font-size:14px ;
+        font-size:19px ;
        
     }
 
@@ -639,7 +646,7 @@ section{
       
     }
    .photo{
-     width: 400px;
+     width: 100%;
      gap: 5px;
    }
     .photo img{
@@ -651,21 +658,103 @@ section{
     }
     
     #skills{
-        padding: 25px 15px;
-       
         
-      
+       padding: 0;
 
     }
 
     .expert{
+        width: 100%;
         flex-wrap: wrap;
+        padding: 0;
+        gap: 0;
+       
 
+    }
+
+    .left{
+        width: 100%;
+        padding: 25px;
+        flex-wrap: wrap;
     }
 
     .left p{
-        font-size: 15px;
+        font-size: 30px;
+
+        
     }
+
+    .left h6{
+        font-size: 14px;
+    }
+
+    .right{
+        width: 100%;
+        align-items: center;
+        padding-left: 10px;
+        margin-bottom: 0;
+       
+       
+    }
+     .right-progress{
+        padding: 5px;
+        width: 100%;
+      
+
+     }
+
+     .progress-bar{
+        width: 100%;
+     }
+
+     .innovative{
+        flex-wrap: wrap;
+        flex-direction: column;
+        height: 350px;
+        align-items: center;
+        justify-content: center;
+        gap:15px;
+        text-align: center;
+        padding:15px;
+        
+     }
+
+     #testimonial{
+        padding: 5px;
+        text-align: center;
+        padding: 25px 0;
+     }
+
+     .clients{
+        flex-wrap: wrap;
+        gap: 50px;
+        padding: 0 10px;
+        
+     }
+
+     .left-client{
+       width: 10%;
+       text-align: start;
+     }
+
+     .client-info{
+        width: 70%;
+        text-align: left;
+     }
+
+     .adress{
+        flex-wrap: wrap;
+        padding: 15px 0;
+        width: 100%;
+     }
+
+     .footer{
+        flex-direction: column;
+        gap: 15px;
+        padding-bottom: 15px;
+     }
+     
+     
 
 
     }
@@ -676,14 +765,388 @@ section{
         /* Small Devices, Tablets */
        
        
- @media only screen and (min-width: 768px) and (max-width: 991px) {
+ @media only screen and (min-width: 768px) and (max-width: 1067px) {
         
+    .menu{
+        visibility: visible;
+       
+    }
+
+    
+
+    nav a{
+         display: none;
+    }
+
+    .overlay .words{
+     padding: 45px;
+
+    }
+
+    .sticky{
+        
+        padding: 0;
+    }
+
+    .words p{
+        font-size: 32px;
+        text-align: center;
+        line-height: 39px;
+    }
+
+    .words h6{
+        font-size: 15px;
+    }
+
+    header{
+         padding: 20px;
+       
+    }
+    .sticky{
+        padding: 20px;
+    }
+
+    .intro{
+        width: 100%;
+        text-align: center;
+        padding: 5px;
        
         
-        }
+    }
+
+    .intro p{
+        font-size: 31px;
+    }
+
+    .intro h6{
+        font-size:19px ;
+       
+    }
+
+    #services{
+        padding: 20px 5px;
+        width: 100%;
+
+    }
+    .service{
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 15px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .operation{
+        width: 45%;
+      
+    }
+
+    #work{
+      padding: 0;
+    }
+
+    .photos{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 25px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    
+    .photo{
+        width: 220px;
+        position: relative;
+    }
+    
+    .photo img{
+        width: 100%;
+        display: block;
+       
+    }
+    
+    .expert{
+        width: 100%;
+        flex-wrap: wrap;
+        padding: 0;
+        gap: 0;
+       
+
+    }
+
+    .left{
+        width: 50%;
+        padding: 25px;
+        flex-wrap: wrap;
+        gap: 0;
+    }
+
+    .left p{
+        font-size: 38px;
+
+        
+    }
+
+    .left h6{
+        font-size: 14px;
+    }
+
+    .right{
+        width: 45%;
+        align-items: start;
+        padding-left: 10px;
+        margin-bottom: 0;
+       
+       
+    }
+     .right-progress{
+        padding: 5px;
+        width: 100%;
+      
+
+     }
+
+     .progress-bar{
+        width: 100%;
+     }
+
+     .innovative{
+        flex-wrap: wrap;
+        flex-direction: column;
+        height: 300px;
+        align-items: center;
+        justify-content: center;
+        gap:15px;
+        text-align: center;
+        padding:15px;
+        
+     }
+
+     #testimonial{
+        padding: 5px;
+        text-align: center;
+        padding: 25px 0;
+     }
+
+     .clients{
+        flex-wrap: nowrap;
+        gap: 50px;
+        padding: 25px;
+       
+        
+     }
+
+     .left-client{
+       width: 10%;
+       text-align: start;
+     }
+
+     .client-info{
+        width: 70%;
+        text-align: left;
+     }
+
 
 
         
+        }
+ 
+
+        /*For laptop*/
+
+@media screen and (min-width:991px) and (max-width:1400px) {
+        .menu{
+            visibility:hidden;
+           
+        }
+    
+        
+    
+        nav a{
+             display: flex;
+             
+        }
+    
+        .overlay .words{
+         padding: 45px;
+    
+        }
+    
+        .sticky{
+            
+            padding: 0;
+        }
+    
+        .words p{
+            font-size: 65px;
+            text-align: center;
+            line-height: 39px;
+        }
+    
+        .words h6{
+            font-size: 20px;
+        }
+    
+        header{
+             padding: 15px;
+           
+        }
+        .sticky{
+            padding: 20px;
+        }
+    
+        .intro{
+            width: 100%;
+            text-align: center;
+            justify-content: center;
+            padding:10px 75px;
+           
+            
+        }
+    
+        .intro p{
+            font-size: 35px;
+        }
+    
+        .intro h6{
+            font-size:14px ;
+            text-align: center;
+           word-wrap: break-word;
+           
+        }
+    
+        #services{
+            padding: 20px 5px;
+            width: 100%;
+    
+        }
+        .service{
+            flex-wrap: nowrap;
+            width: 100%;
+            padding: 25px;
+        }
+    
+        .operation{
+            width: 100%;
+          
+        }
+    
+        .photos{
+            padding: 0;
+          
+        }
+       .photo{
+         width: 30%;
+         gap: 5px;
+       }
+        .photo img{
+            width: 100%;
+        }
+    
+        #work{
+            padding: 15px;
+        }
+        
+        #skills{
+            
+           padding: 0;
+    
+        }
+    
+        .expert{
+            width: 100%;
+            flex-wrap: nowrap;
+            padding: 0;
+            gap: 0;
+           
+    
+        }
+    
+        .left{
+            width: 100%;
+            padding: 25px;
+            flex-wrap: wrap;
+        }
+    
+        .left p{
+            font-size: 30px;
+    
+            
+        }
+    
+        .left h6{
+            font-size: 14px;
+        }
+    
+        .right{
+            width: 100%;
+            align-items: center;
+            padding-right: 10px;
+            margin-bottom: 0;
+           
+           
+        }
+         .right-progress{
+            padding: 5px;
+            width: 100%;
+          
+    
+         }
+    
+         .progress-bar{
+            width: 100%;
+         }
+    
+         .innovative{
+            flex-wrap: wrap;
+            flex-direction: row;
+            height: 350px;
+            align-items: center;
+            justify-content: center;
+            gap:15px;
+            text-align: center;
+            padding:15px;
+            
+         }
+    
+         #testimonial{
+            padding: 5px;
+            text-align: center;
+            padding: 25px 0;
+         }
+    
+         .clients{
+            flex-wrap: nowrap;
+            gap: 50px;
+            padding: 0 10px;
+            
+         }
+    
+         .left-client{
+           width: 10%;
+           text-align: start;
+         }
+    
+         .client-info{
+            width: 70%;
+            text-align: left;
+         }
+    
+         .adress{
+            flex-wrap: nowrap;
+            padding: 15px 20px;
+            width: 100%;
+         }
+    
+         .footer{
+           
+            gap: 15px;
+            padding-bottom: 15px;
+         }
+         
+         
+
+       }
 
 
 
